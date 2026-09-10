@@ -1,0 +1,7 @@
+[project]
+name = "personal-expense-tracker"
+version = "0.1.0"
+description = "A small Django expense tracker built for AI Dev Tools Zoomcamp Homework 1"
+requires-python = ">=3.11"
+dependencies = ["django>=5.1,<6.0"]
+
