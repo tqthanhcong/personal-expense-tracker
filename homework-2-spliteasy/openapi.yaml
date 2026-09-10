@@ -1,0 +1,15 @@
+openapi: 3.1.0
+info: {title: SplitEasy API, version: 0.1.0}
+servers: [{url: http://localhost:8000}]
+paths:
+  /health:
+    get: {summary: Health check, responses: {'200': {description: Healthy}}}
+  /people:
+    get: {summary: List people, responses: {'200': {description: People}}}
+    post: {summary: Add person, responses: {'201': {description: Created}, '409': {description: Duplicate}}}
+  /expenses:
+    get: {summary: List expenses, responses: {'200': {description: Expenses}}}
+    post: {summary: Add expense, responses: {'201': {description: Created}, '404': {description: Person missing}}}
+  /summary:
+    get: {summary: Get balances and settlements, responses: {'200': {description: Summary}}}
+
